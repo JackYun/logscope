@@ -1,0 +1,39 @@
+[package]
+name = "logscope"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+description = "A fast, streaming command-line analyzer for Nginx/Apache access logs and JSON-lines logs"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/JackYun/logscope"
+keywords = ["log", "nginx", "apache", "analyzer", "cli"]
+categories = ["command-line-utilities", "parsing", "text-processing"]
+exclude = ["/target"]
+
+[lib]
+name = "logscope"
+path = "src/lib.rs"
+
+[[bin]]
+name = "logscope"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+chrono = "0.4.38"
+clap = { version = "4.5", features = ["derive"] }
+csv = "1.3"
+flate2 = "1"
+regex = "1.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

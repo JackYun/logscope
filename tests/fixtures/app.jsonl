@@ -1,0 +1,16 @@
+{"timestamp":"2026-03-14T11:00:03Z","level":"info","method":"GET","path":"/api/v1/items","status":200,"bytes":2311,"latency_ms":12.4,"remote_addr":"198.51.100.7"}
+{"timestamp":"2026-03-14T11:00:04Z","level":"info","method":"GET","path":"/api/v1/items/42","status":200,"bytes":512,"latency_ms":8.1,"remote_addr":"198.51.100.7"}
+{"timestamp":"2026-03-14T11:00:09Z","level":"warn","method":"GET","path":"/api/v1/items/9999","status":404,"bytes":64,"latency_ms":3.0,"remote_addr":"198.51.100.7"}
+{"timestamp":"2026-03-14T11:01:30Z","level":"info","method":"POST","path":"/api/v1/items","status":201,"bytes":345,"latency_ms":41.7,"remote_addr":"192.0.2.23"}
+{"timestamp":"2026-03-14T11:02:11Z","level":"info","method":"GET","path":"/api/v1/items?page=3","status":200,"bytes":2280,"latency_ms":15.2,"remote_addr":"192.0.2.23"}
+{"timestamp":"2026-03-14T11:03:45Z","level":"error","method":"DELETE","path":"/api/v1/items/42","status":500,"bytes":431,"latency_ms":250.9,"remote_addr":"192.0.2.23","error":"upstream timeout"}
+{"timestamp":"2026-03-14T11:04:00Z","level":"info","method":"GET","path":"/health","status":200,"bytes":2,"latency_ms":0.4,"remote_addr":"10.0.0.8"}
+{"timestamp":"2026-03-14T11:05:27Z","level":"info","method":"PUT","path":"/api/v1/items/7","status":"204","bytes":0,"latency_ms":22.0,"remote_addr":"203.0.113.5"}
+{"timestamp":"2026-03-14T11:06:02Z","level":"warn","method":"POST","path":"/api/v1/login","status":401,"bytes":87,"latency_ms":95.3,"remote_addr":"203.0.113.99"}
+{"timestamp":"2026-03-14T11:06:03Z","level":"warn","method":"POST","path":"/api/v1/login","status":401,"bytes":87,"latency_ms":88.6,"remote_addr":"203.0.113.99"}
+{"timestamp":"2026-03-14T11:06:05Z","level":"info","method":"POST","path":"/api/v1/login","status":200,"bytes":310,"latency_ms":102.2,"remote_addr":"203.0.113.99"}
+{"timestamp":"2026-03-14T11:08:40Z","level":"error","method":"GET","path":"/api/v1/reports","status":503,"bytes":120,"latency_ms":1500.0,"remote_addr":"198.51.100.42"}
+{"timestamp":"2026-03-14T11:09:00Z","level":"info","method":"GET","path":"/health","status":200,"bytes":2,"latency_ms":0.5,"remote_addr":"10.0.0.8"}
+{"timestamp":"2026-03-14T11:10:15Z","level":"info","method":"GET","path":"/api/v1/reports","status":200,"bytes":8840,"latency_ms":310.4,"remote_addr":"198.51.100.42"}
+{"timestamp":"2026-03-14T11:12:30Z","level":"info","method":"GET","path":"/api/v1/items","status":200,"bytes":2311,"latency_ms":11.9,"remote_addr":"192.0.2.10"}
+{"timestamp":"2026-03-14T11:14:00Z","level":"info","method":"GET","path":"/health","status":200,"bytes":2,"latency_ms":0.4,"remote_addr":"10.0.0.8"}
